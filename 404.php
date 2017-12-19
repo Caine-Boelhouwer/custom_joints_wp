@@ -6,29 +6,28 @@
  */
 
 get_header(); ?>
-			
+
 	<div class="content">
 
 		<div class="inner-content grid-x grid-margin-x grid-padding-x">
-	
+
 			<main class="main small-12 medium-8 large-8 cell" role="main">
 
-				<article class="content-not-found">
-				
-					<header class="article-header">
-						<h1><?php _e( 'Epic 404 - Article Not Found', 'jointswp' ); ?></h1>
-					</header> <!-- end article header -->
-			
-					<section class="entry-content">
-						<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'jointswp' ); ?></p>
-					</section> <!-- end article section -->
+				<div class="grid-container page_notfound_container wow fadeIn">
+					<div class="grid-x">
+						<div class="cell small-12 medium-8 medium-offset-2 text-center">
+							<h1>Helaas deze pagina bestaat niet...</h1>
+						</div>
+						<div class="cell small-12 medium-8 medium-offset-2 large-6 large-offset-3 text-center">
+							<p>Onze excuses, maar deze pagina kunnen we helaas niet vinden. Waarschijnlijk is de link aangepast of de pagina verwijderd.</p>
+						</div>
 
-					<section class="search">
-					    <p><?php get_search_form(); ?></p>
-					</section> <!-- end search section -->
-			
-				</article> <!-- end article -->
-	
+						<div class="cell small-12 medium-8 medium-offset-2 text-center">
+							<a class="custom_btn" onclick="window.history.back();">Ga terug naar de vorige pagina</a>
+						</div>
+					</div>
+				</div>
+
 			</main> <!-- end #main -->
 
 		</div> <!-- end #inner-content -->
